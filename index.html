@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>tuscon · WebGPU experiments</title>
+  </head>
+  <body>
+    <canvas id="gpu-canvas"></canvas>
+
+    <header class="toolbar">
+      <h1>tuscon · WebGPU experiments</h1>
+      <label>
+        Scene
+        <select id="scene-select"></select>
+      </label>
+      <p id="scene-description"></p>
+    </header>
+
+    <div id="notice" hidden>
+      <div class="card">
+        <h2></h2>
+        <p class="detail"></p>
+        <p>
+          WebGPU works in current Chrome and Edge on desktop and Android,
+          Safari 26 and later, and Firefox 141+ on Windows. See
+          <a href="https://caniuse.com/webgpu" target="_blank" rel="noopener">browser support</a>.
+        </p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
